@@ -1,0 +1,26 @@
+<script>
+    //Problema: Multiplicação de elementos do array
+    /*
+    Considere a seguinte lista de números inteiros:
+    let lista = [4, 5, 2, 3];
+    Multiplique todos os elementos da lista e apresente o resultado para o usuário.
+    */
+    //AQUI, USE FOR...OF!
+
+    //Entrada
+    let lista = [4, 5, 2, 3]; 
+    let multiplicacao = 4 * 5 * 2 * 3;
+    let listaN = [];
+
+    //Processamento
+    for (let item of lista){
+    if (typeof item === `number`)
+    listaN.push(item)
+    }
+    for (let numero of listaN){
+    multiplicacao * numero;
+    }
+
+    //Saída
+    document.write(`A multiplicação da lista (${listaN.join(" * ")}) resulta em ${multiplicacao}.`);
+</script>
